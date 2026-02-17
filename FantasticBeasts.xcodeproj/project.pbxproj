@@ -7,7 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A4BC49A2F403947006D8D14 /* MOMClassifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4992F403947006D8D14 /* MOMClassifier.m */; };
+		0A4BC48C2F403892006D8D14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC48A2F403892006D8D14 /* ContentView.swift */; };
+		0A4BC49F2F416A6F006D8D14 /* FantasticBeastsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC49D2F416A6F006D8D14 /* FantasticBeastsApp.swift */; };
+		0A4BC4A02F416A6F006D8D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BC49C2F416A6F006D8D14 /* Assets.xcassets */; };
+		0A4BC4B12F416F7E006D8D14 /* FantasticBeastsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4AF2F416F7E006D8D14 /* FantasticBeastsTests.swift */; };
+		0A4BC4B52F416F90006D8D14 /* FantasticBeastsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4B22F416F90006D8D14 /* FantasticBeastsUITests.swift */; };
+		0A4BC4B62F416F90006D8D14 /* FantasticBeastsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4B32F416F90006D8D14 /* FantasticBeastsUITestsLaunchTests.swift */; };
+		0A4BC4BA2F417197006D8D14 /* Beast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4B92F417197006D8D14 /* Beast.swift */; };
+		0A4BC4BC2F4171CD006D8D14 /* BeastCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4BB2F4171CD006D8D14 /* BeastCategory.swift */; };
+		0A4BC4BE2F4171E6006D8D14 /* MOMClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4BD2F4171E6006D8D14 /* MOMClassification.swift */; };
+		0A4BC4C12F417582006D8D14 /* MOMClassificationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4C02F417582006D8D14 /* MOMClassificationEngine.m */; };
+		0A4BC4C32F41771B006D8D14 /* MOMClassificationCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4C22F41771B006D8D14 /* MOMClassificationCalculator.swift */; };
+		0A4BC4C82F417F14006D8D14 /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4C72F417F14006D8D14 /* Spell.swift */; };
+		0A4BC4CB2F417FF5006D8D14 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4CA2F417FF5006D8D14 /* NetworkService.swift */; };
+		0A4BC4CD2F4183A2006D8D14 /* SpellListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4CC2F4183A2006D8D14 /* SpellListViewModel.swift */; };
+		0A4BC4D12F4186F0006D8D14 /* SpellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4D02F4186F0006D8D14 /* SpellType.swift */; };
+		0A4BC4D32F4187AD006D8D14 /* SpellListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4D22F4187AD006D8D14 /* SpellListView.swift */; };
+		0A4BC4D52F418A0D006D8D14 /* SpellDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4D42F418A0D006D8D14 /* SpellDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,31 +44,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A4BC48A2F403892006D8D14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0A4BC4972F403947006D8D14 /* FantasticBeasts-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FantasticBeasts-Bridging-Header.h"; sourceTree = "<group>"; };
-		0A4BC4982F403947006D8D14 /* MOMClassifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOMClassifier.h; sourceTree = "<group>"; };
-		0A4BC4992F403947006D8D14 /* MOMClassifier.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOMClassifier.m; sourceTree = "<group>"; };
+		0A4BC49C2F416A6F006D8D14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A4BC49D2F416A6F006D8D14 /* FantasticBeastsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasticBeastsApp.swift; sourceTree = "<group>"; };
+		0A4BC4AF2F416F7E006D8D14 /* FantasticBeastsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasticBeastsTests.swift; sourceTree = "<group>"; };
+		0A4BC4B22F416F90006D8D14 /* FantasticBeastsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasticBeastsUITests.swift; sourceTree = "<group>"; };
+		0A4BC4B32F416F90006D8D14 /* FantasticBeastsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasticBeastsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0A4BC4B92F417197006D8D14 /* Beast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beast.swift; sourceTree = "<group>"; };
+		0A4BC4BB2F4171CD006D8D14 /* BeastCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeastCategory.swift; sourceTree = "<group>"; };
+		0A4BC4BD2F4171E6006D8D14 /* MOMClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOMClassification.swift; sourceTree = "<group>"; };
+		0A4BC4BF2F4174C1006D8D14 /* MOMClassificationEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOMClassificationEngine.h; sourceTree = "<group>"; };
+		0A4BC4C02F417582006D8D14 /* MOMClassificationEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOMClassificationEngine.m; sourceTree = "<group>"; };
+		0A4BC4C22F41771B006D8D14 /* MOMClassificationCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOMClassificationCalculator.swift; sourceTree = "<group>"; };
+		0A4BC4C72F417F14006D8D14 /* Spell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
+		0A4BC4CA2F417FF5006D8D14 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		0A4BC4CC2F4183A2006D8D14 /* SpellListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellListViewModel.swift; sourceTree = "<group>"; };
+		0A4BC4D02F4186F0006D8D14 /* SpellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellType.swift; sourceTree = "<group>"; };
+		0A4BC4D22F4187AD006D8D14 /* SpellListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellListView.swift; sourceTree = "<group>"; };
+		0A4BC4D42F418A0D006D8D14 /* SpellDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDetailView.swift; sourceTree = "<group>"; };
 		0AB540FC2F40377B007E9D87 /* FantasticBeasts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FantasticBeasts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB541092F40377C007E9D87 /* FantasticBeastsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FantasticBeastsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB541132F40377C007E9D87 /* FantasticBeastsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FantasticBeastsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		0AB540FE2F40377B007E9D87 /* FantasticBeasts */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FantasticBeasts;
-			sourceTree = "<group>";
-		};
-		0AB5410C2F40377C007E9D87 /* FantasticBeastsTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FantasticBeastsTests;
-			sourceTree = "<group>";
-		};
-		0AB541162F40377C007E9D87 /* FantasticBeastsUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FantasticBeastsUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0AB540F92F40377B007E9D87 /* Frameworks */ = {
@@ -79,16 +93,117 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A4BC4A92F416EEB006D8D14 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0A4BC49C2F416A6F006D8D14 /* Assets.xcassets */,
+				0A4BC49D2F416A6F006D8D14 /* FantasticBeastsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0A4BC4AA2F416EFD006D8D14 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0A4BC4C22F41771B006D8D14 /* MOMClassificationCalculator.swift */,
+				0A4BC4B82F417027006D8D14 /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0A4BC4AB2F416F03006D8D14 /* Legacy */ = {
+			isa = PBXGroup;
+			children = (
+				0A4BC4C02F417582006D8D14 /* MOMClassificationEngine.m */,
+				0A4BC4972F403947006D8D14 /* FantasticBeasts-Bridging-Header.h */,
+				0A4BC4BF2F4174C1006D8D14 /* MOMClassificationEngine.h */,
+			);
+			path = Legacy;
+			sourceTree = "<group>";
+		};
+		0A4BC4AC2F416F15006D8D14 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A4BC4D02F4186F0006D8D14 /* SpellType.swift */,
+				0A4BC4B92F417197006D8D14 /* Beast.swift */,
+				0A4BC4BB2F4171CD006D8D14 /* BeastCategory.swift */,
+				0A4BC4BD2F4171E6006D8D14 /* MOMClassification.swift */,
+				0A4BC4C72F417F14006D8D14 /* Spell.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0A4BC4AD2F416F25006D8D14 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0A4BC4CC2F4183A2006D8D14 /* SpellListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0A4BC4AE2F416F44006D8D14 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A4BC4D22F4187AD006D8D14 /* SpellListView.swift */,
+				0A4BC48A2F403892006D8D14 /* ContentView.swift */,
+				0A4BC4D42F418A0D006D8D14 /* SpellDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A4BC4B02F416F7E006D8D14 /* FantasticBeastsTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A4BC4AF2F416F7E006D8D14 /* FantasticBeastsTests.swift */,
+			);
+			path = FantasticBeastsTests;
+			sourceTree = "<group>";
+		};
+		0A4BC4B42F416F90006D8D14 /* FantasticBeastsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0A4BC4B22F416F90006D8D14 /* FantasticBeastsUITests.swift */,
+				0A4BC4B32F416F90006D8D14 /* FantasticBeastsUITestsLaunchTests.swift */,
+			);
+			path = FantasticBeastsUITests;
+			sourceTree = "<group>";
+		};
+		0A4BC4B72F416F9A006D8D14 /* FantasticBeasts */ = {
+			isa = PBXGroup;
+			children = (
+				0A4BC4A92F416EEB006D8D14 /* App */,
+				0A4BC4AA2F416EFD006D8D14 /* Core */,
+				0A4BC4AC2F416F15006D8D14 /* Models */,
+				0A4BC4AD2F416F25006D8D14 /* ViewModels */,
+				0A4BC4AE2F416F44006D8D14 /* Views */,
+				0A4BC4AB2F416F03006D8D14 /* Legacy */,
+				0A4BC4C42F417A34006D8D14 /* Resources */,
+			);
+			path = FantasticBeasts;
+			sourceTree = "<group>";
+		};
+		0A4BC4B82F417027006D8D14 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0A4BC4CA2F417FF5006D8D14 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0A4BC4C42F417A34006D8D14 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		0AB540F32F40377B007E9D87 = {
 			isa = PBXGroup;
 			children = (
-				0A4BC4982F403947006D8D14 /* MOMClassifier.h */,
-				0A4BC4992F403947006D8D14 /* MOMClassifier.m */,
-				0AB540FE2F40377B007E9D87 /* FantasticBeasts */,
-				0AB5410C2F40377C007E9D87 /* FantasticBeastsTests */,
-				0AB541162F40377C007E9D87 /* FantasticBeastsUITests */,
+				0A4BC4B72F416F9A006D8D14 /* FantasticBeasts */,
+				0A4BC4B02F416F7E006D8D14 /* FantasticBeastsTests */,
+				0A4BC4B42F416F90006D8D14 /* FantasticBeastsUITests */,
 				0AB540FD2F40377B007E9D87 /* Products */,
-				0A4BC4972F403947006D8D14 /* FantasticBeasts-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,9 +232,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				0AB540FE2F40377B007E9D87 /* FantasticBeasts */,
-			);
 			name = FantasticBeasts;
 			packageProductDependencies = (
 			);
@@ -140,9 +252,6 @@
 			dependencies = (
 				0AB5410B2F40377C007E9D87 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				0AB5410C2F40377C007E9D87 /* FantasticBeastsTests */,
-			);
 			name = FantasticBeastsTests;
 			packageProductDependencies = (
 			);
@@ -162,9 +271,6 @@
 			);
 			dependencies = (
 				0AB541152F40377C007E9D87 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				0AB541162F40377C007E9D87 /* FantasticBeastsUITests */,
 			);
 			name = FantasticBeastsUITests;
 			packageProductDependencies = (
@@ -223,6 +329,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4BC4A02F416A6F006D8D14 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +354,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A4BC49A2F403947006D8D14 /* MOMClassifier.m in Sources */,
+				0A4BC4D32F4187AD006D8D14 /* SpellListView.swift in Sources */,
+				0A4BC4D52F418A0D006D8D14 /* SpellDetailView.swift in Sources */,
+				0A4BC4BC2F4171CD006D8D14 /* BeastCategory.swift in Sources */,
+				0A4BC4C32F41771B006D8D14 /* MOMClassificationCalculator.swift in Sources */,
+				0A4BC4BA2F417197006D8D14 /* Beast.swift in Sources */,
+				0A4BC4C12F417582006D8D14 /* MOMClassificationEngine.m in Sources */,
+				0A4BC4BE2F4171E6006D8D14 /* MOMClassification.swift in Sources */,
+				0A4BC48C2F403892006D8D14 /* ContentView.swift in Sources */,
+				0A4BC4D12F4186F0006D8D14 /* SpellType.swift in Sources */,
+				0A4BC4CD2F4183A2006D8D14 /* SpellListViewModel.swift in Sources */,
+				0A4BC4CB2F417FF5006D8D14 /* NetworkService.swift in Sources */,
+				0A4BC4C82F417F14006D8D14 /* Spell.swift in Sources */,
+				0A4BC49F2F416A6F006D8D14 /* FantasticBeastsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4BC4B12F416F7E006D8D14 /* FantasticBeastsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +382,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4BC4B52F416F90006D8D14 /* FantasticBeastsUITests.swift in Sources */,
+				0A4BC4B62F416F90006D8D14 /* FantasticBeastsUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +557,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "FantasticBeasts-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/FantasticBeasts/Legacy/FantasticBeasts-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -482,7 +604,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "FantasticBeasts-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/FantasticBeasts/Legacy/FantasticBeasts-Bridging-Header.h";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
