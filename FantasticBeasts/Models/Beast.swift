@@ -13,4 +13,9 @@ struct Beast: Identifiable, Codable {
     let category: BeastCategory
     let habitat: String
     let abilities: [String]
+    
+//    var dangerLevel: MOMClassification {
+//        MOMClassificationCalculator.calculate(for: self)
+//    }
+	var dangerLevel: MOMClassification { .harmless }
 }
