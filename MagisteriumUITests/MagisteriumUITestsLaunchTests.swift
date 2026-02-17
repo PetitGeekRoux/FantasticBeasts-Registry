@@ -1,13 +1,13 @@
 //
-//  FantasticBeastsUITestsLaunchTests.swift
-//  FantasticBeastsUITests
+//  MagisteriumUITestsLaunchTests.swift
+//  MagisteriumUITests
 //
 //  Created by Kevin St-Pierre on 2026-02-13.
 //
 
 import XCTest
 
-final class FantasticBeastsUITestsLaunchTests: XCTestCase {
+final class FMagisteriumUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

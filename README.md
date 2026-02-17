@@ -1,1 +1,1 @@
-# FantasticBeasts-Registry
+# Magisterium
