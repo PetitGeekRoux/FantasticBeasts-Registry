@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
+	@Environment(\.modelContext) private var modelContext
+
+	private let spellSync = SpellSyncService()
+
+	var body: some View {
 
 		SpellListView()
-//        VStack {
-//            Image(systemName: "globe")
-//                .imageScale(.large)
-//                .foregroundStyle(.tint)
-//            Text("Hello, world!")
-//        }
-//        .padding()
-    }
+			.task {
+				spellSync.bootstrapIfNeeded(context: modelContext)
+			}
+	}
 }
 
 #Preview {
-    ContentView()
+	ContentView()
 }

@@ -21,7 +21,7 @@ class NetworkService {
     
     private init() {}
     
-    func fetchSpells() -> AnyPublisher<[Spell], NetworkError> {
+    func fetchSpells() -> AnyPublisher<[SpellDto], NetworkError> {
         guard let url = URL(string: "\(baseURL)/Spells") else {
             return Fail(error: NetworkError.invalidURL).eraseToAnyPublisher()
         }
@@ -36,7 +36,7 @@ class NetworkService {
                 }
                 return data
             }
-            .decode(type: [Spell].self, decoder: JSONDecoder())
+            .decode(type: [SpellDto].self, decoder: JSONDecoder())
             .mapError { error in
 				print(error)
 

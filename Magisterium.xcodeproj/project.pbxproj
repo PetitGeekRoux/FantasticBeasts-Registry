@@ -18,12 +18,24 @@
 		0A4BC4BE2F4171E6006D8D14 /* MOMClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4BD2F4171E6006D8D14 /* MOMClassification.swift */; };
 		0A4BC4C12F417582006D8D14 /* MOMClassificationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4C02F417582006D8D14 /* MOMClassificationEngine.m */; };
 		0A4BC4C32F41771B006D8D14 /* MOMClassificationCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4C22F41771B006D8D14 /* MOMClassificationCalculator.swift */; };
-		0A4BC4C82F417F14006D8D14 /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4C72F417F14006D8D14 /* Spell.swift */; };
 		0A4BC4CB2F417FF5006D8D14 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4CA2F417FF5006D8D14 /* NetworkService.swift */; };
 		0A4BC4CD2F4183A2006D8D14 /* SpellListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4CC2F4183A2006D8D14 /* SpellListViewModel.swift */; };
 		0A4BC4D12F4186F0006D8D14 /* SpellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4D02F4186F0006D8D14 /* SpellType.swift */; };
 		0A4BC4D32F4187AD006D8D14 /* SpellListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4D22F4187AD006D8D14 /* SpellListView.swift */; };
 		0A4BC4D52F418A0D006D8D14 /* SpellDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4D42F418A0D006D8D14 /* SpellDetailView.swift */; };
+		0A4F141A2F4951860099948D /* SpellDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F14192F4951860099948D /* SpellDto.swift */; };
+		0A4F141E2F4953E10099948D /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F141D2F4953E10099948D /* Spell.swift */; };
+		0A4F14242F495A220099948D /* RemoteFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F14232F495A220099948D /* RemoteFetching.swift */; };
+		0A4F14282F495AF30099948D /* DTOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F14272F495AF30099948D /* DTOMapper.swift */; };
+		0A4F142A2F495B320099948D /* SpellMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F14292F495B320099948D /* SpellMapper.swift */; };
+		0A4F142D2F495BDE0099948D /* DTOIdentifying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F142C2F495BDE0099948D /* DTOIdentifying.swift */; };
+		0A4F142F2F495C030099948D /* SpellIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F142E2F495C030099948D /* SpellIdentifier.swift */; };
+		0A4F14312F495C660099948D /* GenericSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F14302F495C660099948D /* GenericSyncService.swift */; };
+		0A4F14392F495D8D0099948D /* SpellSyncService+Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F14382F495D8D0099948D /* SpellSyncService+Typealias.swift */; };
+		0A4F14412F4961410099948D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F14402F4961410099948D /* Endpoint.swift */; };
+		0A4F14432F4961920099948D /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F14422F4961920099948D /* NetworkClient.swift */; };
+		0A4F14462F4961D80099948D /* SpellRemoteSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F14452F4961D80099948D /* SpellRemoteSource.swift */; };
+		0A4F144A2F4963D10099948D /* SpellSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F14492F4963D10099948D /* SpellSyncService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +69,24 @@
 		0A4BC4BF2F4174C1006D8D14 /* MOMClassificationEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOMClassificationEngine.h; sourceTree = "<group>"; };
 		0A4BC4C02F417582006D8D14 /* MOMClassificationEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOMClassificationEngine.m; sourceTree = "<group>"; };
 		0A4BC4C22F41771B006D8D14 /* MOMClassificationCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOMClassificationCalculator.swift; sourceTree = "<group>"; };
-		0A4BC4C72F417F14006D8D14 /* Spell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
 		0A4BC4CA2F417FF5006D8D14 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		0A4BC4CC2F4183A2006D8D14 /* SpellListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellListViewModel.swift; sourceTree = "<group>"; };
 		0A4BC4D02F4186F0006D8D14 /* SpellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellType.swift; sourceTree = "<group>"; };
 		0A4BC4D22F4187AD006D8D14 /* SpellListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellListView.swift; sourceTree = "<group>"; };
 		0A4BC4D42F418A0D006D8D14 /* SpellDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDetailView.swift; sourceTree = "<group>"; };
+		0A4F14192F4951860099948D /* SpellDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDto.swift; sourceTree = "<group>"; };
+		0A4F141D2F4953E10099948D /* Spell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
+		0A4F14232F495A220099948D /* RemoteFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFetching.swift; sourceTree = "<group>"; };
+		0A4F14272F495AF30099948D /* DTOMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOMapper.swift; sourceTree = "<group>"; };
+		0A4F14292F495B320099948D /* SpellMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellMapper.swift; sourceTree = "<group>"; };
+		0A4F142C2F495BDE0099948D /* DTOIdentifying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOIdentifying.swift; sourceTree = "<group>"; };
+		0A4F142E2F495C030099948D /* SpellIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellIdentifier.swift; sourceTree = "<group>"; };
+		0A4F14302F495C660099948D /* GenericSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSyncService.swift; sourceTree = "<group>"; };
+		0A4F14382F495D8D0099948D /* SpellSyncService+Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpellSyncService+Typealias.swift"; sourceTree = "<group>"; };
+		0A4F14402F4961410099948D /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		0A4F14422F4961920099948D /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		0A4F14452F4961D80099948D /* SpellRemoteSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellRemoteSource.swift; sourceTree = "<group>"; };
+		0A4F14492F4963D10099948D /* SpellSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellSyncService.swift; sourceTree = "<group>"; };
 		0AB540FC2F40377B007E9D87 /* Magisterium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magisterium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB541092F40377C007E9D87 /* MagisteriumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagisteriumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB541132F40377C007E9D87 /* MagisteriumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagisteriumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				0A4BC4C22F41771B006D8D14 /* MOMClassificationCalculator.swift */,
-				0A4BC4B82F417027006D8D14 /* Network */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -128,7 +151,6 @@
 				0A4BC4B92F417197006D8D14 /* Beast.swift */,
 				0A4BC4BB2F4171CD006D8D14 /* BeastCategory.swift */,
 				0A4BC4BD2F4171E6006D8D14 /* MOMClassification.swift */,
-				0A4BC4C72F417F14006D8D14 /* Spell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -171,6 +193,9 @@
 		0A4BC4B72F416F9A006D8D14 /* Magisterium */ = {
 			isa = PBXGroup;
 			children = (
+				0A4F14202F4959200099948D /* Persistence */,
+				0A4F141B2F4953B80099948D /* Domain */,
+				0A4F14172F4951560099948D /* Networking */,
 				0A4BC4A92F416EEB006D8D14 /* App */,
 				0A4BC4AA2F416EFD006D8D14 /* Core */,
 				0A4BC4AC2F416F15006D8D14 /* Models */,
@@ -182,19 +207,86 @@
 			path = Magisterium;
 			sourceTree = "<group>";
 		};
-		0A4BC4B82F417027006D8D14 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				0A4BC4CA2F417FF5006D8D14 /* NetworkService.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		0A4BC4C42F417A34006D8D14 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		0A4F14172F4951560099948D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0A4F14442F4961D10099948D /* Sources */,
+				0A4F14422F4961920099948D /* NetworkClient.swift */,
+				0A4F14402F4961410099948D /* Endpoint.swift */,
+				0A4F14192F4951860099948D /* SpellDto.swift */,
+				0A4BC4CA2F417FF5006D8D14 /* NetworkService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0A4F141B2F4953B80099948D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0A4F141F2F4958DF0099948D /* Spell */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0A4F141F2F4958DF0099948D /* Spell */ = {
+			isa = PBXGroup;
+			children = (
+				0A4F141D2F4953E10099948D /* Spell.swift */,
+			);
+			path = Spell;
+			sourceTree = "<group>";
+		};
+		0A4F14202F4959200099948D /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				0A4F14212F49593C0099948D /* Repository */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		0A4F14212F49593C0099948D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				0A4F14302F495C660099948D /* GenericSyncService.swift */,
+				0A4F142C2F495BDE0099948D /* DTOIdentifying.swift */,
+				0A4F14272F495AF30099948D /* DTOMapper.swift */,
+				0A4F14232F495A220099948D /* RemoteFetching.swift */,
+				0A4F142B2F495B5E0099948D /* Spell */,
+				0A4F14222F4959550099948D /* Sync */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		0A4F14222F4959550099948D /* Sync */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sync;
+			sourceTree = "<group>";
+		};
+		0A4F142B2F495B5E0099948D /* Spell */ = {
+			isa = PBXGroup;
+			children = (
+				0A4F14492F4963D10099948D /* SpellSyncService.swift */,
+				0A4F142E2F495C030099948D /* SpellIdentifier.swift */,
+				0A4F14292F495B320099948D /* SpellMapper.swift */,
+				0A4F14382F495D8D0099948D /* SpellSyncService+Typealias.swift */,
+			);
+			path = Spell;
+			sourceTree = "<group>";
+		};
+		0A4F14442F4961D10099948D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0A4F14452F4961D80099948D /* SpellRemoteSource.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		0AB540F32F40377B007E9D87 = {
@@ -354,19 +446,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4F14462F4961D80099948D /* SpellRemoteSource.swift in Sources */,
+				0A4F14392F495D8D0099948D /* SpellSyncService+Typealias.swift in Sources */,
+				0A4F141A2F4951860099948D /* SpellDto.swift in Sources */,
 				0A4BC4D32F4187AD006D8D14 /* SpellListView.swift in Sources */,
 				0A4BC4D52F418A0D006D8D14 /* SpellDetailView.swift in Sources */,
+				0A4F142F2F495C030099948D /* SpellIdentifier.swift in Sources */,
 				0A4BC4BC2F4171CD006D8D14 /* BeastCategory.swift in Sources */,
 				0A4BC4C32F41771B006D8D14 /* MOMClassificationCalculator.swift in Sources */,
 				0A4BC4BA2F417197006D8D14 /* Beast.swift in Sources */,
 				0A4BC4C12F417582006D8D14 /* MOMClassificationEngine.m in Sources */,
+				0A4F142A2F495B320099948D /* SpellMapper.swift in Sources */,
+				0A4F142D2F495BDE0099948D /* DTOIdentifying.swift in Sources */,
 				0A4BC4BE2F4171E6006D8D14 /* MOMClassification.swift in Sources */,
+				0A4F144A2F4963D10099948D /* SpellSyncService.swift in Sources */,
 				0A4BC48C2F403892006D8D14 /* ContentView.swift in Sources */,
+				0A4F14242F495A220099948D /* RemoteFetching.swift in Sources */,
 				0A4BC4D12F4186F0006D8D14 /* SpellType.swift in Sources */,
+				0A4F14312F495C660099948D /* GenericSyncService.swift in Sources */,
 				0A4BC4CD2F4183A2006D8D14 /* SpellListViewModel.swift in Sources */,
 				0A4BC4CB2F417FF5006D8D14 /* NetworkService.swift in Sources */,
-				0A4BC4C82F417F14006D8D14 /* Spell.swift in Sources */,
+				0A4F141E2F4953E10099948D /* Spell.swift in Sources */,
+				0A4F14282F495AF30099948D /* DTOMapper.swift in Sources */,
 				0A4BC49F2F416A6F006D8D14 /* MagisteriumApp.swift in Sources */,
+				0A4F14412F4961410099948D /* Endpoint.swift in Sources */,
+				0A4F14432F4961920099948D /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
