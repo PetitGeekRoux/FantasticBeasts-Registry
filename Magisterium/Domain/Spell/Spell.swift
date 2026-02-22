@@ -45,19 +45,3 @@ final class Spell: Identifiable {
         self.creator = creator
     }
 }
-
-// MARK: - Mapping from DTO
-extension Spell {
-    convenience init(from dto: SpellDto) {
-        self.init(
-            id: dto.id,
-            name: dto.name,
-            incantation: dto.incantation,
-            effect: dto.effect,
-            canBeVerbal: dto.canBeVerbal,
-            type: SpellType(rawValue: dto.type) ?? .charm,
-            light: dto.light,
-            creator: dto.creator
-        )
-    }
-}
