@@ -44,6 +44,8 @@
 		0A7AD4F52F4ABE2C008AF6B5 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7AD4F42F4ABE2C008AF6B5 /* HTTPClient.swift */; };
 		0A7AD4FA2F4AC218008AF6B5 /* SpellIdentifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7AD4F92F4AC218008AF6B5 /* SpellIdentifierTests.swift */; };
 		0A7AD4FC2F4AC257008AF6B5 /* SpellIdentifierIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7AD4FB2F4AC257008AF6B5 /* SpellIdentifierIntegrationTests.swift */; };
+		0A7AD4FE2F4B8C17008AF6B5 /* SpellMapperMakeEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7AD4FD2F4B8C17008AF6B5 /* SpellMapperMakeEntityTests.swift */; };
+		0A7AD5002F4B9069008AF6B5 /* SpellMapperUpdateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7AD4FF2F4B9069008AF6B5 /* SpellMapperUpdateTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,8 @@
 		0A7AD4F42F4ABE2C008AF6B5 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		0A7AD4F92F4AC218008AF6B5 /* SpellIdentifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellIdentifierTests.swift; sourceTree = "<group>"; };
 		0A7AD4FB2F4AC257008AF6B5 /* SpellIdentifierIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellIdentifierIntegrationTests.swift; sourceTree = "<group>"; };
+		0A7AD4FD2F4B8C17008AF6B5 /* SpellMapperMakeEntityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellMapperMakeEntityTests.swift; sourceTree = "<group>"; };
+		0A7AD4FF2F4B9069008AF6B5 /* SpellMapperUpdateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellMapperUpdateTests.swift; sourceTree = "<group>"; };
 		0AB540FC2F40377B007E9D87 /* Magisterium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magisterium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB541092F40377C007E9D87 /* MagisteriumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagisteriumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB541132F40377C007E9D87 /* MagisteriumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagisteriumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -372,6 +376,8 @@
 		0A7AD4F82F4AC1FA008AF6B5 /* Spell */ = {
 			isa = PBXGroup;
 			children = (
+				0A7AD4FF2F4B9069008AF6B5 /* SpellMapperUpdateTests.swift */,
+				0A7AD4FD2F4B8C17008AF6B5 /* SpellMapperMakeEntityTests.swift */,
 				0A7AD4FB2F4AC257008AF6B5 /* SpellIdentifierIntegrationTests.swift */,
 				0A7AD4F92F4AC218008AF6B5 /* SpellIdentifierTests.swift */,
 			);
@@ -573,7 +579,9 @@
 				0A3480FF2F4AB6EB000BBD6B /* SpellBasicTests.swift in Sources */,
 				0A7AD4FC2F4AC257008AF6B5 /* SpellIdentifierIntegrationTests.swift in Sources */,
 				0A7AD4FA2F4AC218008AF6B5 /* SpellIdentifierTests.swift in Sources */,
+				0A7AD4FE2F4B8C17008AF6B5 /* SpellMapperMakeEntityTests.swift in Sources */,
 				0A7AD4EA2F4AB86C008AF6B5 /* SpellSwiftDataTests.swift in Sources */,
+				0A7AD5002F4B9069008AF6B5 /* SpellMapperUpdateTests.swift in Sources */,
 				0A3481012F4AB71A000BBD6B /* SpellComputedTypeTests.swift in Sources */,
 				0A7AD4F12F4ABD5C008AF6B5 /* SpellRemoteSourceTests.swift in Sources */,
 				0A7AD4EE2F4ABAE6008AF6B5 /* SpellDtoTests.swift in Sources */,
