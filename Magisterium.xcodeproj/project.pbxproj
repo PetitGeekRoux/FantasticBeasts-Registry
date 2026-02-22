@@ -39,6 +39,7 @@
 		0A4F14462F4961D80099948D /* SpellRemoteSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F14452F4961D80099948D /* SpellRemoteSource.swift */; };
 		0A4F144A2F4963D10099948D /* SpellSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F14492F4963D10099948D /* SpellSyncService.swift */; };
 		0A7AD4EA2F4AB86C008AF6B5 /* SpellSwiftDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7AD4E92F4AB86C008AF6B5 /* SpellSwiftDataTests.swift */; };
+		0A7AD4EE2F4ABAE6008AF6B5 /* SpellDtoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7AD4ED2F4ABAE6008AF6B5 /* SpellDtoTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		0A4F14492F4963D10099948D /* SpellSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellSyncService.swift; sourceTree = "<group>"; };
 		0A7AD4E82F4AB78F008AF6B5 /* Magisterium.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Magisterium.xctestplan; sourceTree = "<group>"; };
 		0A7AD4E92F4AB86C008AF6B5 /* SpellSwiftDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellSwiftDataTests.swift; sourceTree = "<group>"; };
+		0A7AD4ED2F4ABAE6008AF6B5 /* SpellDtoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDtoTests.swift; sourceTree = "<group>"; };
 		0AB540FC2F40377B007E9D87 /* Magisterium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magisterium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB541092F40377C007E9D87 /* MagisteriumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagisteriumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB541132F40377C007E9D87 /* MagisteriumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagisteriumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,6 +222,7 @@
 		0A4BC4B02F416F7E006D8D14 /* MagisteriumTests */ = {
 			isa = PBXGroup;
 			children = (
+				0A7AD4EB2F4ABA8C008AF6B5 /* Networking */,
 				0A3480FC2F4AB6B3000BBD6B /* Domain */,
 				0A4BC4AF2F416F7E006D8D14 /* MagisteriumTests.swift */,
 			);
@@ -313,6 +316,22 @@
 				0A4F14452F4961D80099948D /* SpellRemoteSource.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		0A7AD4EB2F4ABA8C008AF6B5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0A7AD4EC2F4ABA96008AF6B5 /* DTOs */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0A7AD4EC2F4ABA96008AF6B5 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				0A7AD4ED2F4ABAE6008AF6B5 /* SpellDtoTests.swift */,
+			);
+			path = DTOs;
 			sourceTree = "<group>";
 		};
 		0AB540F32F40377B007E9D87 = {
@@ -509,6 +528,7 @@
 				0A3480FF2F4AB6EB000BBD6B /* SpellBasicTests.swift in Sources */,
 				0A7AD4EA2F4AB86C008AF6B5 /* SpellSwiftDataTests.swift in Sources */,
 				0A3481012F4AB71A000BBD6B /* SpellComputedTypeTests.swift in Sources */,
+				0A7AD4EE2F4ABAE6008AF6B5 /* SpellDtoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
