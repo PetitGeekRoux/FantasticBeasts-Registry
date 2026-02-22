@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
 	@Environment(\.modelContext) private var modelContext
@@ -15,6 +16,7 @@ struct ContentView: View {
 	var body: some View {
 
 		SpellListView()
+			.modelContext(modelContext)
 			.task {
 				spellSync.bootstrapIfNeeded(context: modelContext)
 			}

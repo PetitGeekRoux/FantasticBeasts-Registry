@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A3480F52F4AABA0000BBD6B /* SpellRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3480F42F4AABA0000BBD6B /* SpellRowView.swift */; };
+		0A3480F92F4AAD2D000BBD6B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3480F82F4AAD2D000BBD6B /* NetworkError.swift */; };
 		0A4BC48C2F403892006D8D14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC48A2F403892006D8D14 /* ContentView.swift */; };
 		0A4BC49F2F416A6F006D8D14 /* MagisteriumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC49D2F416A6F006D8D14 /* MagisteriumApp.swift */; };
 		0A4BC4A02F416A6F006D8D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BC49C2F416A6F006D8D14 /* Assets.xcassets */; };
@@ -18,7 +20,6 @@
 		0A4BC4BE2F4171E6006D8D14 /* MOMClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4BD2F4171E6006D8D14 /* MOMClassification.swift */; };
 		0A4BC4C12F417582006D8D14 /* MOMClassificationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4C02F417582006D8D14 /* MOMClassificationEngine.m */; };
 		0A4BC4C32F41771B006D8D14 /* MOMClassificationCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4C22F41771B006D8D14 /* MOMClassificationCalculator.swift */; };
-		0A4BC4CB2F417FF5006D8D14 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4CA2F417FF5006D8D14 /* NetworkService.swift */; };
 		0A4BC4CD2F4183A2006D8D14 /* SpellListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4CC2F4183A2006D8D14 /* SpellListViewModel.swift */; };
 		0A4BC4D12F4186F0006D8D14 /* SpellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4D02F4186F0006D8D14 /* SpellType.swift */; };
 		0A4BC4D32F4187AD006D8D14 /* SpellListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BC4D22F4187AD006D8D14 /* SpellListView.swift */; };
@@ -31,7 +32,6 @@
 		0A4F142D2F495BDE0099948D /* DTOIdentifying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F142C2F495BDE0099948D /* DTOIdentifying.swift */; };
 		0A4F142F2F495C030099948D /* SpellIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F142E2F495C030099948D /* SpellIdentifier.swift */; };
 		0A4F14312F495C660099948D /* GenericSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F14302F495C660099948D /* GenericSyncService.swift */; };
-		0A4F14392F495D8D0099948D /* SpellSyncService+Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F14382F495D8D0099948D /* SpellSyncService+Typealias.swift */; };
 		0A4F14412F4961410099948D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F14402F4961410099948D /* Endpoint.swift */; };
 		0A4F14432F4961920099948D /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F14422F4961920099948D /* NetworkClient.swift */; };
 		0A4F14462F4961D80099948D /* SpellRemoteSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F14452F4961D80099948D /* SpellRemoteSource.swift */; };
@@ -56,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A3480F42F4AABA0000BBD6B /* SpellRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellRowView.swift; sourceTree = "<group>"; };
+		0A3480F82F4AAD2D000BBD6B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		0A4BC48A2F403892006D8D14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0A4BC4972F403947006D8D14 /* Magisterium-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Magisterium-Bridging-Header.h"; sourceTree = "<group>"; };
 		0A4BC49C2F416A6F006D8D14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,7 +71,6 @@
 		0A4BC4BF2F4174C1006D8D14 /* MOMClassificationEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOMClassificationEngine.h; sourceTree = "<group>"; };
 		0A4BC4C02F417582006D8D14 /* MOMClassificationEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOMClassificationEngine.m; sourceTree = "<group>"; };
 		0A4BC4C22F41771B006D8D14 /* MOMClassificationCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOMClassificationCalculator.swift; sourceTree = "<group>"; };
-		0A4BC4CA2F417FF5006D8D14 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		0A4BC4CC2F4183A2006D8D14 /* SpellListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellListViewModel.swift; sourceTree = "<group>"; };
 		0A4BC4D02F4186F0006D8D14 /* SpellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellType.swift; sourceTree = "<group>"; };
 		0A4BC4D22F4187AD006D8D14 /* SpellListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellListView.swift; sourceTree = "<group>"; };
@@ -82,7 +83,6 @@
 		0A4F142C2F495BDE0099948D /* DTOIdentifying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOIdentifying.swift; sourceTree = "<group>"; };
 		0A4F142E2F495C030099948D /* SpellIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellIdentifier.swift; sourceTree = "<group>"; };
 		0A4F14302F495C660099948D /* GenericSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSyncService.swift; sourceTree = "<group>"; };
-		0A4F14382F495D8D0099948D /* SpellSyncService+Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpellSyncService+Typealias.swift"; sourceTree = "<group>"; };
 		0A4F14402F4961410099948D /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		0A4F14422F4961920099948D /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		0A4F14452F4961D80099948D /* SpellRemoteSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellRemoteSource.swift; sourceTree = "<group>"; };
@@ -117,6 +117,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A3480F02F4AA70D000BBD6B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0A3480F12F4AA716000BBD6B /* Spell */,
+				0A4BC48A2F403892006D8D14 /* ContentView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0A3480F12F4AA716000BBD6B /* Spell */ = {
+			isa = PBXGroup;
+			children = (
+				0A3480F42F4AABA0000BBD6B /* SpellRowView.swift */,
+				0A4BC4CC2F4183A2006D8D14 /* SpellListViewModel.swift */,
+				0A4BC4D22F4187AD006D8D14 /* SpellListView.swift */,
+				0A4BC4D42F418A0D006D8D14 /* SpellDetailView.swift */,
+			);
+			path = Spell;
+			sourceTree = "<group>";
+		};
+		0A3480F22F4AA741000BBD6B /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				0A4F14192F4951860099948D /* SpellDto.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		0A3480F32F4AA786000BBD6B /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				0A3480F82F4AAD2D000BBD6B /* NetworkError.swift */,
+				0A4F14422F4961920099948D /* NetworkClient.swift */,
+				0A4F14402F4961410099948D /* Endpoint.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
 		0A4BC4A92F416EEB006D8D14 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,30 +185,11 @@
 		0A4BC4AC2F416F15006D8D14 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0A4BC4D02F4186F0006D8D14 /* SpellType.swift */,
 				0A4BC4B92F417197006D8D14 /* Beast.swift */,
 				0A4BC4BB2F4171CD006D8D14 /* BeastCategory.swift */,
 				0A4BC4BD2F4171E6006D8D14 /* MOMClassification.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		0A4BC4AD2F416F25006D8D14 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				0A4BC4CC2F4183A2006D8D14 /* SpellListViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		0A4BC4AE2F416F44006D8D14 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				0A4BC4D22F4187AD006D8D14 /* SpellListView.swift */,
-				0A4BC48A2F403892006D8D14 /* ContentView.swift */,
-				0A4BC4D42F418A0D006D8D14 /* SpellDetailView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		0A4BC4B02F416F7E006D8D14 /* MagisteriumTests */ = {
@@ -193,35 +212,24 @@
 		0A4BC4B72F416F9A006D8D14 /* Magisterium */ = {
 			isa = PBXGroup;
 			children = (
-				0A4F14202F4959200099948D /* Persistence */,
-				0A4F141B2F4953B80099948D /* Domain */,
-				0A4F14172F4951560099948D /* Networking */,
 				0A4BC4A92F416EEB006D8D14 /* App */,
 				0A4BC4AA2F416EFD006D8D14 /* Core */,
-				0A4BC4AC2F416F15006D8D14 /* Models */,
-				0A4BC4AD2F416F25006D8D14 /* ViewModels */,
-				0A4BC4AE2F416F44006D8D14 /* Views */,
+				0A4F141B2F4953B80099948D /* Domain */,
 				0A4BC4AB2F416F03006D8D14 /* Legacy */,
-				0A4BC4C42F417A34006D8D14 /* Resources */,
+				0A4BC4AC2F416F15006D8D14 /* Models */,
+				0A4F14172F4951560099948D /* Networking */,
+				0A4F14202F4959200099948D /* Persistence */,
+				0A3480F02F4AA70D000BBD6B /* Presentation */,
 			);
 			path = Magisterium;
-			sourceTree = "<group>";
-		};
-		0A4BC4C42F417A34006D8D14 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		0A4F14172F4951560099948D /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				0A3480F32F4AA786000BBD6B /* Http */,
+				0A3480F22F4AA741000BBD6B /* DTOs */,
 				0A4F14442F4961D10099948D /* Sources */,
-				0A4F14422F4961920099948D /* NetworkClient.swift */,
-				0A4F14402F4961410099948D /* Endpoint.swift */,
-				0A4F14192F4951860099948D /* SpellDto.swift */,
-				0A4BC4CA2F417FF5006D8D14 /* NetworkService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -238,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				0A4F141D2F4953E10099948D /* Spell.swift */,
+				0A4BC4D02F4186F0006D8D14 /* SpellType.swift */,
 			);
 			path = Spell;
 			sourceTree = "<group>";
@@ -258,16 +267,8 @@
 				0A4F14272F495AF30099948D /* DTOMapper.swift */,
 				0A4F14232F495A220099948D /* RemoteFetching.swift */,
 				0A4F142B2F495B5E0099948D /* Spell */,
-				0A4F14222F4959550099948D /* Sync */,
 			);
 			path = Repository;
-			sourceTree = "<group>";
-		};
-		0A4F14222F4959550099948D /* Sync */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Sync;
 			sourceTree = "<group>";
 		};
 		0A4F142B2F495B5E0099948D /* Spell */ = {
@@ -276,7 +277,6 @@
 				0A4F14492F4963D10099948D /* SpellSyncService.swift */,
 				0A4F142E2F495C030099948D /* SpellIdentifier.swift */,
 				0A4F14292F495B320099948D /* SpellMapper.swift */,
-				0A4F14382F495D8D0099948D /* SpellSyncService+Typealias.swift */,
 			);
 			path = Spell;
 			sourceTree = "<group>";
@@ -447,10 +447,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A4F14462F4961D80099948D /* SpellRemoteSource.swift in Sources */,
-				0A4F14392F495D8D0099948D /* SpellSyncService+Typealias.swift in Sources */,
 				0A4F141A2F4951860099948D /* SpellDto.swift in Sources */,
 				0A4BC4D32F4187AD006D8D14 /* SpellListView.swift in Sources */,
+				0A3480F52F4AABA0000BBD6B /* SpellRowView.swift in Sources */,
 				0A4BC4D52F418A0D006D8D14 /* SpellDetailView.swift in Sources */,
+				0A3480F92F4AAD2D000BBD6B /* NetworkError.swift in Sources */,
 				0A4F142F2F495C030099948D /* SpellIdentifier.swift in Sources */,
 				0A4BC4BC2F4171CD006D8D14 /* BeastCategory.swift in Sources */,
 				0A4BC4C32F41771B006D8D14 /* MOMClassificationCalculator.swift in Sources */,
@@ -465,7 +466,6 @@
 				0A4BC4D12F4186F0006D8D14 /* SpellType.swift in Sources */,
 				0A4F14312F495C660099948D /* GenericSyncService.swift in Sources */,
 				0A4BC4CD2F4183A2006D8D14 /* SpellListViewModel.swift in Sources */,
-				0A4BC4CB2F417FF5006D8D14 /* NetworkService.swift in Sources */,
 				0A4F141E2F4953E10099948D /* Spell.swift in Sources */,
 				0A4F14282F495AF30099948D /* DTOMapper.swift in Sources */,
 				0A4BC49F2F416A6F006D8D14 /* MagisteriumApp.swift in Sources */,
