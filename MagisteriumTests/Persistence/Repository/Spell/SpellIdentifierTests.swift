@@ -44,7 +44,6 @@ struct SpellIdentifierTests {
 			creator: nil
 		)
 
-		// Accès via keyPath
 		let value = spell[keyPath: SpellIdentifier.idKeyPath]
 		#expect(value == "accio")
 	}

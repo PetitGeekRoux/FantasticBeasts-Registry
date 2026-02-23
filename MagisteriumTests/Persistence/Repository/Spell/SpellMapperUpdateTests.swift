@@ -63,7 +63,7 @@ struct SpellMapperUpdateTests {
         )
 
         let dto = SpellDto(
-            id: "different-id", // même si le DTO a un autre id, on ne touche pas à l'id de l'entité
+            id: "different-id",
             name: "Lumos (Updated)",
             incantation: nil,
             effect: "Light beam",

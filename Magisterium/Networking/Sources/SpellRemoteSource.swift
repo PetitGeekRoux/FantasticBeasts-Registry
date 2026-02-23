@@ -21,3 +21,5 @@ struct SpellRemoteSource {
 		return client.request(endpoint, decoder: JSONDecoder())
     }
 }
+
+extension SpellRemoteSource: SpellRemoteFetching {}

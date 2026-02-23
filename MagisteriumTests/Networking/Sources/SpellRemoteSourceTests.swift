@@ -10,7 +10,6 @@ import Testing
 
 @testable import Magisterium
 
-// Un faux client qui renvoie des données préparées
 struct FakeHTTPClient: HTTPClient {
 	let data: Data
 	let decodeError: Bool
