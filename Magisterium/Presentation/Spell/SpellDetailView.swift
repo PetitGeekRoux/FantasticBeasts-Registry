@@ -5,7 +5,6 @@
 //  Created by Kevin St-Pierre on 2026-02-13.
 //
 
-
 import SwiftUI
 
 struct SpellDetailView: View {
@@ -44,9 +43,6 @@ struct SpellDetailView: View {
 							.font(.body)
 					}
 				}
-
-				// Add more fields here as your model grows
-
 				Spacer(minLength: 0)
 			}
 			.padding()
@@ -59,8 +55,6 @@ struct SpellDetailView: View {
 }
 
 #Preview {
-	// Provide a lightweight preview using a mock Spell. Adjust initializer to your model.
-	// Replace with a proper factory if available in your project.
 	SpellDetailView(
 		spell: Spell(
 			id: "preview-lumos",

@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "C1422DCA-9075-48B5-A731-8247DD45B03A",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Magisterium.xcodeproj",
+      "identifier" : "0AB540FB2F40377B007E9D87",
+      "name" : "Magisterium"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Magisterium.xcodeproj",
+        "identifier" : "0AB541082F40377C007E9D87",
+        "name" : "MagisteriumTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Magisterium.xcodeproj",
+        "identifier" : "0AB541122F40377C007E9D87",
+        "name" : "MagisteriumUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

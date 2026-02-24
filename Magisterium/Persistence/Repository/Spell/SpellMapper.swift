@@ -6,9 +6,19 @@
 //
 
 struct SpellMapper: DTOMapper {
-    func makeEntity(from dto: SpellDto) -> Spell {
-        Spell(from: dto)
-    }
+
+	func makeEntity(from dto: SpellDto) -> Spell {
+		Spell(
+			id: dto.id,
+			name: dto.name,
+			incantation: dto.incantation,
+			effect: dto.effect,
+			canBeVerbal: dto.canBeVerbal,
+			type: SpellType(rawValue: dto.type) ?? .charm,
+			light: dto.light,
+			creator: dto.creator
+		)
+	}
 
     func update(_ entity: Spell, with dto: SpellDto) {
         entity.name = dto.name
