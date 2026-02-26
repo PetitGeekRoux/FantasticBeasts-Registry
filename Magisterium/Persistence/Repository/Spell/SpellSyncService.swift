@@ -14,34 +14,19 @@ final class SpellSyncService {
 	private let mapper = SpellMapper()
 	private let remote: SpellRemoteFetching
 
-	init(remote: SpellRemoteFetching = SpellRemoteSource()) {
+	init(remote: SpellRemoteFetching) {
 		self.remote = remote
+	}
+
+	convenience init() {
+		self.init(remote: SpellRemoteSource())
 	}
 
 	func bootstrapIfNeeded(context: ModelContext) {
 		do {
 			let existing = try context.fetch(FetchDescriptor<Spell>())
 			guard existing.isEmpty else { return }
-
-			remote
-				.fetchAll()
-				.receive(on: DispatchQueue.main)
-				.sink { completion in
-					if case .failure(let error) = completion {
-						print("Remote error: \(error)")
-					}
-				} receiveValue: { [weak self] dtos in
-					guard let self else { return }
-					do {
-						for dto in dtos {
-							try self.upsert(dto, in: context)
-						}
-						try context.save()
-					} catch {
-						print("Save error: \(error)")
-					}
-				}
-				.store(in: &cancellables)
+			Task { await fetchAndUpsertAll(context: context) }
 		} catch {
 			print("Fetch error: \(error)")
 		}
@@ -55,6 +40,41 @@ final class SpellSyncService {
 		} else {
 			let entity = mapper.makeEntity(from: dto)
 			context.insert(entity)
+		}
+	}
+}
+
+@MainActor
+extension SpellSyncService {
+	func fetchAndUpsertAll(context: ModelContext) async {
+		do {
+			let dtos = await fetchAllDTOsAsync()
+
+			for dto in dtos {
+				try upsert(dto, in: context)
+			}
+
+			try context.save()
+		} catch {
+			print("fetchAndUpsertAll error: \(error)")
+		}
+	}
+
+	private func fetchAllDTOsAsync() async -> [SpellDto] {
+		await withCheckedContinuation { continuation in
+			var cancellable: AnyCancellable?
+			cancellable = remote.fetchAll()
+				.sink(
+					receiveCompletion: { completion in
+						if case .failure = completion {
+							continuation.resume(returning: [])  // en cas d'erreur, renvoyer [] ou utilisez withCheckedThrowingContinuation
+						}
+					},
+					receiveValue: { dtos in
+						continuation.resume(returning: dtos)
+						_ = cancellable  // garder la référence vivante
+					}
+				)
 		}
 	}
 }
