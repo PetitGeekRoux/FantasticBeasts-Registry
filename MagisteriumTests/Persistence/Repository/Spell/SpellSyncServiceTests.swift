@@ -34,7 +34,7 @@ struct SpellSyncServiceTests {
 	}
 
 	@MainActor @Test("bootstrapIfNeeded inserts when store is empty")
-	func bootstrapInsertsWhenEmpty() throws {
+	func bootstrapInsertsWhenEmpty() async throws {
 		let container = try makeInMemoryContainer()
 		let context = ModelContext(container)
 
@@ -52,7 +52,7 @@ struct SpellSyncServiceTests {
 		])
 		let service = SpellSyncService(remote: remote)
 
-		service.bootstrapIfNeeded(context: context)
+		await service.fetchAndUpsertAll(context: context)
 
 		let fetched = try context.fetch(FetchDescriptor<Spell>())
 		#expect(fetched.count == 1)
@@ -143,8 +143,6 @@ struct SpellSyncServiceTests {
 			light: "White",
 			creator: "Unknown"
 		)
-		let remote = FakeSpellRemote(dtos: [updatedDTO])
-		let service = SpellSyncService(remote: remote)
 
 		let predicate = #Predicate<Spell> { $0.id == updatedDTO.id }
 		let descriptor = FetchDescriptor<Spell>(predicate: predicate)
@@ -158,4 +156,45 @@ struct SpellSyncServiceTests {
 		#expect(fetched.first?.name == "Accio (Updated)")
 		#expect(fetched.first?.type == .hex)
 	}
+
+	@MainActor @Test("fetchAndUpsertAll inserts when store is empty")
+	func fetchAndUpsertAllInsertsWhenEmpty() async throws {
+		let container = try makeInMemoryContainer()
+		let context = ModelContext(container)
+
+		let remote = FakeSpellRemote(dtos: [
+			SpellDto(id: "lumos", name: "Lumos", incantation: "Lumos", effect: "Light", canBeVerbal: true, type: "Charm", light: "White", creator: "Unknown")
+		])
+		let service = SpellSyncService(remote: remote)
+
+		await service.fetchAndUpsertAll(context: context)
+
+		let fetched = try context.fetch(FetchDescriptor<Spell>())
+		#expect(fetched.count == 1)
+		#expect(fetched.first?.id == "lumos")
+	}
+
+	@MainActor @Test("fetchAndUpsertAll upserts existing entity")
+	func fetchAndUpsertAllUpserts() async throws {
+		let container = try makeInMemoryContainer()
+		let context = ModelContext(container)
+		let mapper = SpellMapper()
+
+		let initial = mapper.makeEntity(from: SpellDto(id: "accio", name: "Accio", incantation: nil, effect: "Summons", canBeVerbal: nil, type: "Charm", light: "None", creator: nil))
+		context.insert(initial)
+		try context.save()
+
+		let updated = SpellDto(id: "accio", name: "Accio (Updated)", incantation: "Accio", effect: "Summons objects", canBeVerbal: true, type: "Hex", light: "White", creator: "Unknown")
+		let remote = FakeSpellRemote(dtos: [updated])
+		let service = SpellSyncService(remote: remote)
+
+		await service.fetchAndUpsertAll(context: context)
+
+		let fetched = try context.fetch(FetchDescriptor<Spell>())
+		#expect(fetched.count == 1)
+		#expect(fetched.first?.name == "Accio (Updated)")
+		#expect(fetched.first?.type == .hex)
+	}
+
+	
 }

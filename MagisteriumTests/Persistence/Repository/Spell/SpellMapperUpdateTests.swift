@@ -14,7 +14,7 @@ struct SpellMapperUpdateTests {
 
     @Test("Updates all mutable fields")
     func updatesAllFields() {
-        var spell = Spell(
+		let spell = Spell(
             id: "accio",
             name: "Accio",
             incantation: nil,

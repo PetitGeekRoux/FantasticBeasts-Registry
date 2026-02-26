@@ -22,4 +22,5 @@ struct SpellRemoteSource {
     }
 }
 
-extension SpellRemoteSource: SpellRemoteFetching {}
+extension SpellRemoteSource: SpellRemoteFetching {
+}
